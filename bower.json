@@ -1,0 +1,25 @@
+{
+  "name": "ocore-wallet-client",
+  "main": "index.js",
+  "version": "1.0.0",
+  "homepage": "https://github.com/guantau/ocore-wallet-client",
+  "authors": ["Alan During"],
+  "description": "Client for ocore-wallet-service",
+  "keywords": [
+    "obyte",
+    "ocore",
+    "multisig",
+    "wallet",
+    "client"
+  ],
+  "ignore": [
+    "**/.*",
+    "lib",
+    "node_modules",
+    "Gruntfile.js",
+    "Makefile",
+    "index.js",
+    "test",
+    "Makefile"
+  ]
+}
