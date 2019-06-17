@@ -53,120 +53,19 @@ describe('Utils', function() {
   });
 
   describe('#formatAmount', function() {
-    it('should successfully format short amount', function() {
+    it('should successfully format amount', function() {
       var cases = [{
-        args: [1, 'one'],
-        expected: '1',
+        args: [1, 'base', 0],
+        expected: '1 Bytes',
       }, {
-        args: [1, 'giga'],
-        expected: '0.00',
+        args: [400050000, 'base', 0],
+        expected: '400.050 MB',
       }, {
-        args: [400050000, 'giga'],
-        expected: '0.40005',
-      }, {
-        args: [400000000, 'giga'],
-        expected: '0.40',
-      }, {
-        args: [49999, 'giga'],
-        expected: '0.0000499',
-      }, {
-        args: [1000000000, 'giga'],
-        expected: '1.00',
-      }, {
-        args: [0, 'one'],
-        expected: '0',
-      }, {
-        args: [12345678, 'one'],
-        expected: '12,345,678',
-      }, {
-        args: [123456789, 'giga'],
-        expected: '0.1234567',
-      }, {
-        args: [123456111, 'giga'],
-        expected: '0.1234561',
-      }, {
-        args: [1234, 'giga'],
-        expected: '0.0000012',
-      }, {
-        args: [1299, 'giga'],
-        expected: '0.0000012',
-      }, {
-        args: [1234567899999, 'giga'],
-        expected: '1,234.5678999',
-      }, {
-        args: [123456789, 'one', {
-          thousandsSeparator: '.'
-        }],
-        expected: '123.456.789',
-      }, {
-        args: [123456789, 'giga', {
-          decimalSeparator: ','
-        }],
-        expected: '0,1234567',
-      }, {
-        args: [1234567899999, 'giga', {
-          thousandsSeparator: ' ',
-          decimalSeparator: ','
-        }],
-        expected: '1 234,5678999',
+        args: [1234567899999, 'base', 0],
+        expected: '1,234.568 GB',
       }, ];
 
       _.each(cases, function(testCase) {
-        Utils.formatAmount.apply(this, testCase.args).should.equal(testCase.expected);
-      });
-    });
-    it('should successfully format full amount', function() {
-      var cases = [{
-        args: [1, 'one'],
-        expected: '1',
-      }, {
-        args: [1, 'giga'],
-        expected: '0.000000001',
-      }, {
-        args: [0, 'one'],
-        expected: '0',
-      }, {
-        args: [123456789, 'one'],
-        expected: '123,456,789',
-      }, {
-        args: [123456789, 'giga'],
-        expected: '0.123456789',
-      }, {
-        args: [12345678, 'giga'],
-        expected: '0.012345678',
-      }, {
-        args: [123456111, 'giga'],
-        expected: '0.123456111',
-      }, {
-        args: [1234, 'giga'],
-        expected: '0.000001234',
-      }, {
-        args: [1299, 'giga'],
-        expected: '0.000001299',
-      }, {
-        args: [12345678999999, 'giga'],
-        expected: '12,345.678999999',
-      }, {
-        args: [123456789, 'kilo', {
-          thousandsSeparator: "'"
-        }],
-        expected: "123'456.789",
-      }, {
-        args: [123456789, 'giga', {
-          decimalSeparator: ','
-        }],
-        expected: '0,123456789',
-      }, {
-        args: [12345678999999, 'giga', {
-          thousandsSeparator: ' ',
-          decimalSeparator: ','
-        }],
-        expected: '12 345,678999999',
-      }, ];
-
-      _.each(cases, function(testCase) {
-        testCase.args[2] = testCase.args[2] || {};
-        testCase.args[2].fullPrecision = true;
         Utils.formatAmount.apply(this, testCase.args).should.equal(testCase.expected);
       });
     });
