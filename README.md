@@ -27,7 +27,7 @@ npm i ocore-wallet-client
 ```
 
 ### **Create and join a shared wallet**
----
+
 Create two files `irene.js` and `tomas.js` with the content below:
 
 **irene.js**
@@ -135,7 +135,6 @@ Note that the scripts created two files named `irene.dat` and `tomas.dat`. With 
 
 
 ### **Open a wallet dat file**
----
 
 ``` javascript
 var Client = require('ocore-wallet-client');
@@ -162,9 +161,6 @@ Now you can get the balance for the wallet with:
 ```
 
 # Global
-
-
-* * *
 
 ## Class: API
 ClientAPI constructor.
@@ -806,12 +802,8 @@ Returns send max information.
 
 **Returns**: `Callback`, cb - Return error (if exists) and object result
 
-* * *
-
 
 # Global
-
-* * *
 
 ## Class: Logger
 A simple logger that wraps the <tt>console.log</tt> methods when available.
@@ -890,12 +882,8 @@ Log messages at the fatal level.
 
 **args**: `*`, the arguments to be logged.
 
-* * *
-
 
 # Global
-
-* * *
 
 ## Class: Verifier
 Verifier constructor. Checks data given by the server
