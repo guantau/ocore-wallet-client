@@ -7,7 +7,7 @@ The *official* client library for [ocore-wallet-service](https://github.com/guan
 
 This package communicates with OWS [Ocore wallet service](https://github.com/guantau/ocore-wallet-service) using the REST API. All REST endpoints are wrapped as simple async methods. All relevant responses from OWS are checked independently by the peers, thus the importance of using this library when talking to a third party OWS instance.
 
-See [Ocore-wallet](https://github.com/guantau/ocore-wallet) for a simple CLI wallet implementation that relays on BWS and uses ocore-wallet-client.
+See [Ocore-wallet](https://github.com/guantau/ocore-wallet) for a simple CLI wallet implementation that relays on OWS and uses ocore-wallet-client.
 
 ## Get Started
 
@@ -806,67 +806,10 @@ Returns send max information.
 
 **Returns**: `Callback`, cb - Return error (if exists) and object result
 
-
 * * *
-
-
-
-
-
-
-
-
-
-
-* * *
-
-
-
-
-
-
-
-
-
-
-* * *
-
-
-
-
-
-
-
-
-
-
-* * *
-
-
-
-
-
-
-
-
-
-
-* * *
-
-
-
-
-
-
-
-
 
 
 # Global
-
-
-
-
 
 * * *
 
@@ -947,58 +890,10 @@ Log messages at the fatal level.
 
 **args**: `*`, the arguments to be logged.
 
-
-
-
 * * *
-
-
-
-
-
-
-
-
-
-
-* * *
-
-
-
-
-
-
-
-
-
-
-* * *
-
-
-
-
-
-
-
-
-
-
-* * *
-
-
-
-
-
-
-
-
 
 
 # Global
-
-
-
-
 
 * * *
 
@@ -1031,17 +926,7 @@ Check copayers
 
 
 
-
-
 * * *
-
-
-
-
-
-
-
-
 
 
 The MIT License
