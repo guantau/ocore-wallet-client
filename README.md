@@ -754,7 +754,7 @@ Returns exchange rate for the specified currency & timestamp.
 
 **opts**: `Object`, Returns exchange rate for the specified currency & timestamp.
 
-**opts.code**: `string`, Currency ISO code.
+**opts.code**: `string`, Currency ISO code, such as 'BTC-GBYTE' or 'USDT-GBYTE'.
 
 **opts.ts**: `Date`, A timestamp to base the rate on (default Date.now()).
 
