@@ -42,7 +42,7 @@
     "coveralls": "^3.0.6",
     "istanbul": "*",
     "mocha": "^5.2.0",
-    "mongodb": "^2.0.27",
+    "mongodb": "^3.1.13",
     "ocore-wallet-service": "git+https://github.com/guantau/ocore-wallet-service.git",
     "sinon": "^7.4.1",
     "supertest": "^3.0.0",
