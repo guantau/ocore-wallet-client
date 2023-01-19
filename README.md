@@ -1,2 +1,2 @@
 # ocore-wallet-client
-OWNED BY TOPENGA
+OWNED BY TOPENGA Immunefi POC
